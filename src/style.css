@@ -1,6 +1,7 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #2c786c;
+  --secondary-color: #faf5e4;
+  --accent-color: #f8b400;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -46,7 +47,7 @@ p {
 }
 
 .hero p {
-  color: #272142;
+  color: #004445;
   font-size: 36px;
   font-weight: bold;
   margin: 0;
@@ -87,6 +88,11 @@ p {
   margin: 30px;
 }
 
+.contact-links a {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -110,7 +116,7 @@ p {
 }
 
 .logo {
-  max-height: 40px;
+  line-height: 42px;
 }
 
 nav {
@@ -130,15 +136,16 @@ nav li {
 }
 
 nav a {
-  color: #272142;
+  color: #004445;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 
+.contact-links a:hover,
 nav a:hover,
 nav li.active a,
 footer .email-link:hover {
-  color: var(--branding-color);
+  color: var(--accent-color);
 }
 
 footer {
@@ -183,7 +190,7 @@ footer .repository-link {
 }
 
 footer .repository-link:hover {
-  color: #272142;
+  color: var(--accent-color);
 }
 
 @media (max-width: 900px) {
